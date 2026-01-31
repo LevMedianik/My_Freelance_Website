@@ -644,6 +644,7 @@ function applyLang(lang) {
         if (liEls[1]) setHTML(liEls[1], "services.terms.li2");
         if (liEls[2]) setHTML(liEls[2], "services.terms.li3");
         if (liEls[3]) setHTML(liEls[3], "services.terms.li4");
+        if (liEls[4]) setHTML(liEls[4], "services.terms.li5");
       }
     }
   }
