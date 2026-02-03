@@ -86,6 +86,13 @@ const i18n = {
     "cases.c2.b3": "<strong>Как работает:</strong> текстовый запрос → извлечение параметров (NLP/spaCy) → скоринг и ранжирование (CatBoost)",
     "cases.c2.b4": "<strong>Формат для продукта:</strong> фронт + API + модель, масштабируется под новые данные и категории",
 
+    "cases.c3.title": "Бот поддержки Telegram с AI-FAQ и контролем уверенности",
+    "cases.c3.subtitle": "Автоматизация первой линии поддержки: бот сопоставляет вопросы с базой FAQ и отвечает только при достаточной уверенности, иначе переводит на оператора.",
+    "cases.c3.b1": "<strong>Кому подходит:</strong> поддержка в Telegram (личные/групповые чаты), где важно снизить нагрузку и избежать ложных автоответов",
+    "cases.c3.b2": "<strong>Что на выходе:</strong> бот с режимами confident / non-confident с воспроизводимым NLP/ML-пайплайном",
+    "cases.c3.b3": "<strong>Как работает:</strong> очистка вариаций → эмбеддинги → cosine similarity → threshold-логика → ответ или передача оператору",
+    "cases.c3.b4": "<strong>Контроль качества:</strong> настраиваемый порог уверенности, исключающий ложные автоответы без изменения логики бота",
+
     "cases.note.title": "Примечание",
     "cases.note.text": "В демо используются синтетические данные, так как для реальных проектов требуется доступ к прайсам и CRM. Кейсы показывают продуктовую архитектуру, UX и формат интеграции ML-модели в рабочий сервис.",
 
@@ -331,6 +338,13 @@ en: {
     "<strong>How it works:</strong> text query → parameter extraction (NLP/spaCy) → scoring & ranking (CatBoost)",
   "cases.c2.b4":
     "<strong>Product format:</strong> frontend + API + model – scalable to new data and categories",
+
+  "cases.c3.title": "Telegram support bot with AI FAQ matching and confidence control",
+  "cases.c3.subtitle": "First-line support automation: the bot matches user questions to an FAQ base and answers only when confidence is high; otherwise it routes to an operator.",
+  "cases.c3.b1": "<strong>Best for:</strong> Telegram support (DMs/groups) where you need to reduce load and avoid false auto-replies",
+  "cases.c3.b2": "<strong>Output:</strong> bot with confident / non-confident behavior with a reproducible NLP/ML pipeline",
+  "cases.c3.b3": "<strong>How it works:</strong> variant cleanup → embeddings → cosine similarity → threshold logic → answer or operator handoff",
+  "cases.c3.b4": "<strong>Quality control:</strong> configurable confidence threshold to prevent false auto-replies without changing bot logic",
 
   "cases.note.title": "Note",
   "cases.note.text":
